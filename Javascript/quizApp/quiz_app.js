@@ -245,41 +245,49 @@ submit.addEventListener("click", () => {
         if (lang === "esp") {
           quiz.innerHTML = `<h2>Has completado la prueba.</h2>
             <h3>Su puntuaje final es de ${score} de un posible ${quizData.length}</h3>
-            <h3>Exelente!</h3>`;
+            <h3>Exelente!</h3>
+            <button onclick="location.reload()">Intentar Otra Vez</button>`;
         } else {
           quiz.innerHTML = `<h2>You have completed the quiz.</h2>
             <h3>Your score is ${score} out of a possible ${quizData.length}</h3>
-            <h3>Excellent!</h3>`;
+            <h3>Excellent!</h3>
+            <button onclick="location.reload()">Try Again</button>`;
         }
       } else if ((score / quizData.length) * 100 > 65) {
         if (lang === "esp") {
           quiz.innerHTML = `<h2>Has completado la prueba.</h2>
             <h3>Su puntuaje final es de ${score} de un posible ${quizData.length}</h3>
-            <h3>Buen Trabajo!</h3>`;
+            <h3>Buen Trabajo!</h3>
+            <button onclick="location.reload()">Intentar Otra Vez</button>`;
         } else {
           quiz.innerHTML = `<h2>You have completed the quiz.</h2>
             <h3>Your score is ${score} out of a possible ${quizData.length}</h3>
-            <h3>Good Job!</h3>`;
+            <h3>Good Job!</h3>
+            <button onclick="location.reload()">Try Again</button>`;
         }
       } else if ((score / quizData.length) * 100 > 49) {
         if (lang === "esp") {
           quiz.innerHTML = `<h2>Has completado la prueba.</h2>
             <h3>Su puntuaje final es de ${score} de un posible ${quizData.length}</h3>
-            <h3>Puedes hacerlo mejor!</h3>`;
+            <h3>Puedes hacerlo mejor!</h3>
+            <button onclick="location.reload()">Intentar Otra Vez</button>`;
         } else {
           quiz.innerHTML = `<h2>You have completed the quiz.</h2>
             <h3>Your score is ${score} out of a possible ${quizData.length}</h3>
-            <h3>You can do better!</h3>`;
+            <h3>You can do better!</h3>
+            <button onclick="location.reload()">Try Again</button>`;
         }
       } else {
         if (lang === "esp") {
           quiz.innerHTML = `<h2>Has completado la prueba.</h2>
             <h3>Su puntuaje final es de ${score} de un posible ${quizData.length}</h3>
-            <h3>Fallaste!</h3>`;
+            <h3>Fallaste!</h3>
+            <button onclick="location.reload()">Intentar Otra Vez</button>`;
         } else {
           quiz.innerHTML = `<h2>You have completed the quiz.</h2>
             <h3>Your score is ${score} out of a possible ${quizData.length}</h3>
-            <h3>You Failed!</h3>`;
+            <h3>You Failed!</h3>
+            <button onclick="location.reload()">Try Again</button>`;
         }
       }
     }
