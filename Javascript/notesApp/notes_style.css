@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(190, 137, 68);
+}
+
+.add {
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  color: gold;
+  cursor: pointer;
+  position: fixed;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: royalblue;
+}
+
+.add:hover {
+  color: royalblue;
+  background-color: gold;
+}
+
+.note {
+  margin: 3vh;
+  height: 45vh;
+  width: 25rem;
+  background-color: #81a550;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note .tools {
+  display: flex;
+  padding: 0.5rem;
+  background-color: #5b7a30;
+  justify-content: space-between;
+}
+
+.note .tools button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: transparent;
+}
+
+.note .tools .edit_button:hover {
+  color: #0e5835;
+}
+
+.note .tools .delete_button:hover {
+  color: rgb(156, 6, 6);
+}
+
+.note .main {
+  width: 100%;
+  height: 100%;
+  padding: 1vh;
+  overflow: hidden;
+  color: #9ec862;
+  font-weight: bold;
+  font-size: 1.7rem;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+.note textarea {
+  width: 100%;
+  border: none;
+  height: 40vh;
+  resize: none;
+  outline: none;
+  color: #9ec862;
+  font-size: 1.5rem;
+  font-family: inherit;
+  background-color: transparent;
+}
+
+.note .hidden {
+  display: none;
+}
